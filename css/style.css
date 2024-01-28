@@ -154,29 +154,34 @@ img {
 
 /* hero start */
 .hero-section {
-  background-color: var(--grey);
+  /* background-color: var(--grey); */
 }
+
 .hero-section {
   /* to center text and buttons */
   /* padding: 188px 0; */
   /* background: var(--grey, rgba(46, 47, 66, 0.7)); */
   /* background-image: url(/images/hero-office.jpg); */
   /* background-blend-mode: screen; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container-hero {
   /* to center text and buttons */
   text-align: center;
   display: flex;
-  align-items: center;
+
+  /* 1st used to center the hero-button */
+  /* align-items: center; */
+
   flex-direction: column;
   justify-content: center;
   /* to center text and buttons, una naka set sa hero-section*/
@@ -194,6 +199,9 @@ img {
 }
 
 .hero-button {
+  /* 2nd used to center the hero-button */
+  margin: 0 auto;
+
   background: var(--iris);
   color: var(--white);
   font-family: inherit;
